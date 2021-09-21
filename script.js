@@ -1,6 +1,6 @@
 {"}"}
 
-<><><><script>
+<><><><><script>
 
 
 
@@ -93,7 +93,7 @@
         <input type="submit" value="Submit" />
         <input type="reset" value="Reset" />
     </form></><script type="text/javascript">
-        writeRandomQuote = function () { }
+        writeRandomQuote = function ()
         var quotes = new Array();
         quotes[0] = "Ryan is cool";
         quotes[1] = "Ryan is cooler";
@@ -103,4 +103,4 @@
         document.write(quotes[rand]);
         {"}"}
         writeRandomQuote();
-    </script></>
+    </script></><a href="javascript:window.print();">Print this peice of junk</a></>
