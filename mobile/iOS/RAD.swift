@@ -1,1 +1,1 @@
-
+print("Greetings and Salutations, Planet")
