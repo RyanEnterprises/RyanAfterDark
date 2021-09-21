@@ -23,3 +23,10 @@ class Greeter(val name: String) {
 fun main(args: Array<String>) {
     Greeter(args[0]).greet()
 }
+
+val jake = Person()                                     // 1
+val stringDescription = jake.apply {                    // 2
+    name = "Ryan After Dark"                                       // 3
+    age = 0
+    about = "Basically the canary version of RyanWeb"
+}.toString()                                            // 4
