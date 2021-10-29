@@ -93,7 +93,6 @@ def login_response():
         if username_lo.get() == usern and password_lo.get() == passwo:
             messagebox.showinfo('', 'Login Successful')
             root.destroy()
-            import main
         else:
             messagebox.showerror('', 'Username or Password is incorrect')
     else:
