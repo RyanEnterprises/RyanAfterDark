@@ -5,6 +5,7 @@ import math
 import random
 import smtplib
 from tkinter import messagebox
+from tkinter import font
 
 # Database and Table
 con = sqlite3.connect('userdata.db')
@@ -97,6 +98,40 @@ def login_response():
             messagebox.showerror('', 'Username or Password is incorrect')
     else:
         messagebox.showerror('', 'Username or Password is incorrect')
-        
+def login():
+    f = Frame(root, height=450, width=500, bg= '#FFBA41')
+    Label(f, text='Login', font=('arial', 20, 'bold'), bg='#FFBA41').place(x=200, y=120)
+    Label(f, text='Fill out the following before proceeding', font=('arial', 10, 'bold'),
+        fg='#666A6C', bg='#FFBA41').place(x=140, y=170)
+    Label(f, text='Username', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=200)
+    user = Entry(f, textvariable=username_lo, font=('arial', 10, 'bold'), width=30)
+    user.place(x=150, y=220)
+    Label(f, text='Password', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=250)
+    passw = Entry(f, textvariable=password_lo, font=('arial', 10, 'bold'), width=30, show='*')
+    passw.place(x=150, y=270)
+    Button(f, text='Login', font=('arial', 10, 'bold'), bg='#FFBA41', fg='#4C4A49', command=login_response).place(x=220, y=300)
+    Label(f, text='Don\'t have an account?', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=350)
+    Button(f, text='Register', font=('arial', 10, 'bold'), bg='#FFBA41', fg='#4C4A49', command=registration).place(x=300, y=350)
+    f.place(x=0, y=0)
 
-        
+def registration():
+    f = Frame(root, height=450, width=500, bg= '#FFBA41')
+    Label(f, text='Registration', font=('arial', 20, 'bold'), bg='#FFBA41').place(x=140, y=60)
+
+    Label(f, text='Full Name', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=120)
+    Entry(f, textvariable=fullname, font=('arial', 10, 'bold'), width=30).place(x=150, y=140)
+
+    Label(f, text='Username', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=170)
+    Entry(f, textvariable=username, font=('arial', 10, 'bold'), width=30).place(x=150, y=190)
+
+    Label(f, text='Email', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=220)
+    Entry(f, textvariable=email, font=('arial', 10, 'bold'), width=30).place(x=150, y=240)
+
+    Label(f, text='Password', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=270)
+    Entry(f, textvariable=password, font=('arial', 10, 'bold'), width=30, show='*').place(x=150, y=290)
+
+    Button(f, text='Register', font=('arial', 10, 'bold'), bg='#FFBA41', fg='#4C4A49', command=insert_record).place(x=200, y=330)
+
+    Label(f, text='Already have an account?', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=120, y=380)
+    Button(f, text='Login', font=('arial', 10, 'bold'), bg='#FFBA41', fg='#4C4A49', command=login).place(x=300, y=380)
+    f.place(x=0, y=0)
