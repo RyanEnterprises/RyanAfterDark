@@ -135,3 +135,48 @@ def registration():
     Label(f, text='Already have an account?', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=120, y=380)
     Button(f, text='Login', font=('arial', 10, 'bold'), bg='#FFBA41', fg='#4C4A49', command=login).place(x=300, y=380)
     f.place(x=0, y=0)
+
+def otpvericitation():
+    global otp
+    digits = '0123456789'
+    otp = ''
+
+    for i in range(4):
+        otp += digits[math.floor(random.random() * 10)]
+        print(otp)
+
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+        server.starttls()
+        server.ehlo()
+        server.login('fakemail8963@gmail.com', 'FakeMail@8963')
+        subject = 'OTP'
+        body = 'Your OTP is ' + otp
+        msg = f"Subject: {subject} \n\n {body}"
+
+        server.sendmail(
+            'fakemail8963@gmail.com', 'aviirathore1099@gmail.com', msg )
+
+        print('OTP sent')
+
+        f = Frame(root, height=450, width=500, bg= '#FFBA41')
+        Label(f, text='OTP Verification', font=('arial', 20, 'bold'), bg='#FFBA41').place(x=100, y=120)
+
+        Label(f, text='OTP has been sent, please check your email, and spam folder',font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=100, y=170)
+
+        Label(f, text='Enter the OTP', font=('arial', 10, 'bold'), fg='#4C4A49', bg='#FFBA41').place(x=150, y=200)
+        Entry(f, textvariable=otp, font=('arial', 10, 'bold'), width=30).place(x=150, y=230)
+
+        Button(f, text='Verify', font=('arial', 10, 'bold'), bg='#FFBA41', command=check).place(x=200, y=260)
+        f.place(x=0, y=0)
+
+    def check():
+        global otp
+        if otp == entryotp:
+            messagebox.showinfo('Success', 'OTP Verified')
+            login()
+        else:
+            messagebox.showerror('Wrong', 'OTP not verified')
+    
+    login()
+    root.mainloop()
