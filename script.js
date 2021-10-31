@@ -373,5 +373,5 @@ TODO:
     el("#reset").onclick = function() {
       window.location = window.location;
     };
-  
+  function
   }());
