@@ -1,4 +1,3 @@
-#Imports
 from tkinter import *
 import smtplib
 from tkinter import messagebox
@@ -44,3 +43,7 @@ def mail_compose():
     Label(f, text="From", font=("Arial", 10), bg="black", fg="white").place(x=20, y=60)
     Label(f, text=f"<{Email.get()}>", font=("Arial", 10), bg="black", fg="white").place(x=20, y=80)
 
+
+
+
+root.mainloop()
