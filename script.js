@@ -6,7 +6,7 @@
 // If the user has not entered their name, ask them to enter it
 // Display the name and number of visits
 
-var name = "";
+
 var visits = 0;
 var visitsCookie = "visits=";
 var nameCookie = "name=";

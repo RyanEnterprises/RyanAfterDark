@@ -1,4 +1,11 @@
 body {
   background-color: black;
-  font: "Raleway";
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
