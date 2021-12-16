@@ -55,5 +55,5 @@ function getName() {
   if (nameCookieExists) {
     nameCookieValue = document.cookie.substring(
       document.cookie.indexOf(nameCookie) + nameCookie.length)
-    }
   }
+}
