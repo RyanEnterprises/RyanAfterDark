@@ -19,7 +19,7 @@
 </script>
 
 <header>
-    <div class="flex justify-between p-6 dark:bg-black text-primary dark:text-white">
+    <div class="flex justify-between p-6 dark:bg-black text-primary dark:text-tertiary">
         <img src={logoUrl} alt="logo" />
         <a href="#extras" class="hover:text-blue-500">Extras</a>
     </div>
