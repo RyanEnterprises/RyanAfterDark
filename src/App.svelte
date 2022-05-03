@@ -5,6 +5,7 @@
   import Hero from './lib/hero.svelte'
   import Demotivation from './lib/demotivation.svelte'
   import Demotivator from './lib/demotivator.svelte'
+  import UAtester from './lib/UAtester.svelte'
 </script>
 
 <main>
@@ -14,5 +15,6 @@
     <Demotivator />
     <Demotivation />
   </div>
+  <!-- <UAtester /> -->
   
 </main>
