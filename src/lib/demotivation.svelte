@@ -12,8 +12,7 @@
             Get Insult
         </button>
     </div>
-    <p class="text-center font-primary font-bold text-4xl p-10">
+    <p class="text-center font-primary text-4xl p-10">
         {result}
-        <!-- {insults[Math.floor(Math.random() * insults.length)]} -->
     </p>
 </div>

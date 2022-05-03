@@ -10,6 +10,9 @@
 <main>
   <Header />
   <Hero />
-  <Demotivator />
-  <Demotivation />
+  <div class="dark:bg-black dark:text-white bg-white text-black">
+    <Demotivator />
+    <Demotivation />
+  </div>
+  
 </main>
