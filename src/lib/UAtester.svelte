@@ -1,6 +1,6 @@
 <script>
     import '../app.css'
-    import { DEVICE_type, browser, cookieStatus, doNotTrackStatus, OS, PDFviewerStatus } from 'uadetect'
+    import { browser, OS, DEVICE_type, cookieStatus, doNotTrackStatus } from 'uadetect'
 </script>
 
 <div>
@@ -8,6 +8,6 @@
         We know a lot about you
     </h1>
     <p class="text-center font-primary text-4xl p-10">
-        We think that you are on {DEVICE_type}, using the {browser} browser, and you are using {OS} operating system. 
+        We think that you are on a {DEVICE_type} device using the {browser} browser, and you are using {OS} operating system. Your cookie status is {cookieStatus}, and your doNotTrackStatus is {doNotTrackStatus}. 
     </p>
 </div>

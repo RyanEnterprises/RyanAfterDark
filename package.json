@@ -17,7 +17,9 @@
     "vite": "^2.9.7"
   },
   "dependencies": {
+    "bootstrap-icons": "1.8.1",
     "demotivator": "^8.5.0",
+    "jquery": "^3.6.0",
     "uadetect": "^2.0.2"
   }
 }
