@@ -1,11 +1,11 @@
 <script>
-  import Counter from './lib/Counter.svelte'
+  import Counter from './components/Counter.svelte'
   import './app.css'
-  import Header from './lib/header.svelte'
-  import Hero from './lib/hero.svelte'
-  import Demotivation from './lib/demotivation.svelte'
-  import Demotivator from './lib/demotivator.svelte'
-  import UAtester from './lib/UAtester.svelte'
+  import Header from './components/header.svelte'
+  import Hero from './components/hero.svelte'
+  import Demotivation from './components/demotivation.svelte'
+  import Demotivator from './components/demotivator.svelte'
+  import UAtester from './components/UAtester.svelte'
 </script>
 
 <main>
