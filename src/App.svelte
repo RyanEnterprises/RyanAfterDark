@@ -6,6 +6,17 @@
   import Demotivation from './components/demotivation.svelte'
   import Demotivator from './components/demotivator.svelte'
   import UAtester from './components/UAtester.svelte'
+  import { robotStatus } from 'uadetect';
+
+    if (robotStatus === 'ROBOT_controlled') {
+        alert(`According to our robot status, ${robotStatus}, you are a robot`);
+        alert("You are not allowed to visit this site");
+        alert("🤖")
+        window.location.href = 'https://www.google.com/';
+    }
+    else {
+        console.log("Not a robot");
+    }
 </script>
 
 <main>

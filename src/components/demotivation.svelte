@@ -1,10 +1,11 @@
 <script>
     import '../app.css';
-    import { insults } from 'demotivator';
-    let result = insults[Math.floor(Math.random() * insults.length)];
+    import DeMotivatorButton from './deMotivatorButton.svelte';
+    import { insults } from 'demotivator'
+    let result = insults[Math.floor(Math.random() * insults.length)]
     const randomize = () => {
-        result = insults[Math.floor(Math.random() * insults.length)];
-    };
+        result = insults[Math.floor(Math.random() * insults.length)]
+    }
 </script>
 <div>
     <div>

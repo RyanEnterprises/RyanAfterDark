@@ -6,6 +6,10 @@ export default defineConfig({
   plugins: [svelte()],
   build: {
     rollupOptions: {
+        input: {
+            index: 'index.html',
+            fourOhFour: '404.html',
+        },
         output: {
             dir: './docs',
         }

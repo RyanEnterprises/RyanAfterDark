@@ -1,3 +1,19 @@
+.spin {
+    animation: spin 5s infinite linear;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.backspin {
+    animation: spin 2s infinite linear;
+}
+@keyframes backspin {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
