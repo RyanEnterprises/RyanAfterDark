@@ -5,6 +5,7 @@
     import '../../app.css'
     import { robotStatus } from 'uadetect';
     import Thoughts from '../../components/thoughts.svelte';
+    import Cute from '../../components/cute.svelte';
 
     if (robotStatus === 'ROBOT_controlled') {
         alert(`According to our robot status, ${robotStatus}, you are a robot`);
@@ -33,5 +34,6 @@
         <p class="text-center font-primary">
             Redirecting...
         </p>
+        <Cute />
     </div>
 </main>

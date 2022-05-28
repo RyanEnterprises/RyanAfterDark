@@ -1,13 +1,15 @@
 <script>
-  import Counter from './components/Counter.svelte'
-  import './app.css'
-  import Header from './components/header.svelte'
-  import Hero from './components/hero.svelte'
-  import Demotivation from './components/demotivation.svelte'
-  import Demotivator from './components/demotivator.svelte'
-  import UAtester from './components/UAtester.svelte'
-  import { robotStatus } from 'uadetect';
-  import { DEVICE_finiteType } from 'uadetect';
+    import Counter from './components/Counter.svelte'
+    import './app.css'
+    import Header from './components/header.svelte'
+    import Hero from './components/hero.svelte'
+    import Demotivation from './components/demotivation.svelte'
+    import Demotivator from './components/demotivator.svelte'
+    import UAtester from './components/UAtester.svelte'
+    import { robotStatus } from 'uadetect';
+    import { DEVICE_finiteType } from 'uadetect';
+    import Cats from './components/cats.svelte'
+import Cute from './components/cute.svelte'
 
     if (robotStatus === 'ROBOT_controlled') {
         alert(`According to our robot status, ${robotStatus}, you are a robot`);
@@ -45,4 +47,6 @@
     <Demotivation />
   </div>
   <UAtester />
+  <Cats />
+  <Cute />
 </main>
