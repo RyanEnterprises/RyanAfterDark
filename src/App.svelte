@@ -47,6 +47,8 @@ import Cute from './components/cute.svelte'
     <Demotivation />
   </div>
   <UAtester />
-  <Cats />
-  <Cute />
+  <div class="dark:bg-black dark:text-white bg-white text-black">
+    <Cats />
+    <Cute />
+  </div>
 </main>
