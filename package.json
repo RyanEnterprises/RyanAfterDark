@@ -21,6 +21,6 @@
     "demotivator": "^8.5.0",
     "jquery": "^3.6.0",
     "serve": "^13.0.2",
-    "uadetect": "^2.0.2"
+    "uadetect": "^3.0.0"
   }
 }
