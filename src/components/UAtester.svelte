@@ -6,8 +6,14 @@
         OS,
         cookieStatus,
         doNotTrackStatus,
-        maxTouchPoints
+        maxTouchPoints,
     } from 'uadetect'
+
+    import {
+        version,
+        engine,
+        PDFviewerStatus
+    } from 'uadetect';
 </script>
 
 <div>
@@ -16,6 +22,13 @@
     </h1>
     <p class="text-center font-primary text-4xl p-10">
         We think that you are on a {DEVICE_type} device using the {browser} browser, and you are using {OS} operating system. Your cookie status is {cookieStatus}, and your doNotTrackStatus is {doNotTrackStatus}. 
-        The max amout of touch points on your device is {maxTouchPoints}.
+        The max amout of touch points on your device is {maxTouchPoints}. <br>
+        You are using the {engine} engine and your browser's version number is {version}. <br>
+        {#if PDFviewerStatus}
+            And your browser has a PDF viewer.
+        {/if}
+        {#if !PDFviewerStatus}
+            And your browser does not have a PDF viewer.
+        {/if}
     </p>
 </div>
