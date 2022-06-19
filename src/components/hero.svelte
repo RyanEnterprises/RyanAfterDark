@@ -17,6 +17,7 @@
     else {
         console.log("not december 25th");
     }
+    const dateIsJune16 = date.getMonth() == 5 && date.getDate() == 16;
 </script>
 
 
@@ -25,7 +26,12 @@
         <h1 class="text-center font-primary font-bold text-white text-8xl p-10">
             THIS IS
             <br>
-            RyanAfterDark
+            {#if dateIsJune16}
+                RYAN DAY!
+            {/if}
+            {#if !dateIsJune16}
+                RyanAfterDark
+            {/if}
         </h1>
         <Clock />
     </div>
