@@ -10,6 +10,14 @@ const getCatFact = async () => {
 let catPromise = getCatFact();
 
 
+const getCatGif = async () => {
+    const respone = await fetch("https://cataas.com/cat/gif");
+    const data = await respone.json();
+    const catGif = data.gif;
+    return catGif;
+}
+let catGifPromise = getCatGif();
+
 </script>
 
 <main>
@@ -28,5 +36,14 @@ let catPromise = getCatFact();
             </p>
         {/await}
     </p>
+    <div class="m-auto">
+        {#await catGifPromise}
+            <p class="text-center font-primary text-2xl">
+                Loading...
+            </p>
+        {:then catGif} 
+            <img src="{catGif}" alt="a randomly generated cat GIF">
+        {/await}
+    </div>
 
 </main>

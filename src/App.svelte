@@ -9,7 +9,8 @@
     import { robotStatus } from 'uadetect';
     import { DEVICE_finiteType } from 'uadetect';
     import Cats from './components/cats.svelte'
-import Cute from './components/cute.svelte'
+    import Cute from './components/cute.svelte'
+    import 'jquery';
 
     if (robotStatus === 'ROBOT_controlled') {
         alert(`According to our robot status, ${robotStatus}, you are a robot`);
@@ -40,15 +41,15 @@ import Cute from './components/cute.svelte'
 </script>
 
 <main>
-  <Header />
-  <Hero />
-  <div class="dark:bg-black dark:text-white bg-white text-black">
-    <Demotivator />
-    <Demotivation />
-  </div>
-  <UAtester />
-  <div class="dark:bg-black dark:text-white bg-white text-black">
-    <Cats />
-    <Cute />
-  </div>
+    <Header />
+    <Hero />
+    <div class="dark:bg-black dark:text-white bg-white text-black">
+        <Demotivator />
+        <Demotivation />
+    </div>
+    <UAtester />
+    <div class="dark:bg-black dark:text-white bg-white text-black">
+        <Cats />
+        <Cute />
+    </div>
 </main>
