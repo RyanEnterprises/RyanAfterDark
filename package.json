@@ -20,7 +20,7 @@
     "bootstrap-icons": "1.8.3",
     "demotivator": "^9.0.0",
     "jquery": "^3.6.0",
-    "serve": "^13.0.4",
+    "serve": "^14.0.1",
     "svelte-transitions-draw": "^1.0.0",
     "uadetect": "^3.1.2"
   }
