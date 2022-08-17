@@ -1,8 +1,8 @@
+
 <script>
     import '../app.css';
     import Clock from './clock.svelte';
     let date = new Date();
-    let time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     const gradient = document.getElementById("gradient");
     // if the date is december 25th, change the background color to either red or green, chosen randomly
     if (date.getMonth() == 11 && date.getDate() == 25) {
@@ -22,7 +22,7 @@
 
 
 <div id="hero">
-    <div class="bg-gradient-to-tr from-primary to-blue-500 dark:bg-gradient-to-r dark:from-tertiary dark:to-tertiary" id="gradient">
+    <div class="bg-gradient-to-tr from-primary to-blue-800 dark:bg-gradient-to-r dark:from-tertiary dark:to-tertiary" id="gradient">
         <h1 class="text-center font-primary font-bold text-white text-8xl p-10">
             THIS IS
             <br>

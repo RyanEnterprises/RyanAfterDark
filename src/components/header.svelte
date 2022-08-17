@@ -1,10 +1,15 @@
+
 <script>
     import '../app.css';
+    import fullColorLogo from '../img/FullColor.svg'
+    import darkLogo from '../img/Black.svg'
+    import lightLogo from '../img/White.svg'
+    import christmasLogo from '../img/christmas.png'
     const logo = {
-        standard: '../img/FullColor.svg',
-        dark: '../img/Black.svg',
-        light: '../img/White.svg',
-        christmas: '../img/christmas.png'
+        standard: fullColorLogo,
+        dark: darkLogo,
+        light: lightLogo,
+        christmas: christmasLogo
     };
     // IF the user prefers dark mode, then the logo should be light
     // However, if the date is in the month of december, then the logo should be christmas

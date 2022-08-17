@@ -1,3 +1,4 @@
+
 <script>
     import { insults } from 'demotivator';
     import FourOhFour from '../../components/fourOhFour.svelte';

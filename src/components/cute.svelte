@@ -1,3 +1,4 @@
+
 <script>
     const getAnimal = async () => {
         const response = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand');

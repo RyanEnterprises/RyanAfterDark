@@ -1,3 +1,4 @@
+
 <script>
     import Counter from './components/Counter.svelte'
     import './app.css'
