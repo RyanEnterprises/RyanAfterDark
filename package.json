@@ -22,6 +22,6 @@
     "jquery": "^3.6.0",
     "serve": "^14.0.1",
     "svelte-transitions-draw": "^1.0.0",
-    "uadetect": "^3.1.2"
+    "uadetect": "^4.0.0"
   }
 }
