@@ -1,27 +1,19 @@
 {
-  "name": "ryanafterdark",
+  "name": "@example/basics",
+  "version": "0.0.1",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "svelte": "^3.49.0",
-    "tailwindcss": "^3.1.8",
-    "vite": "^2.9.14"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "bootstrap-icons": "1.9.1",
-    "demotivator": "^9.0.0",
-    "jquery": "^3.6.0",
-    "serve": "^14.0.1",
-    "svelte-transitions-draw": "^1.0.0",
-    "uadetect": "^3.1.2"
+    "astro": "^1.1.5",
+    "uadetect": "^4.0.0",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "demotivator": "^10.0.0"
   }
 }
