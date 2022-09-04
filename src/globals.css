@@ -1,0 +1,20 @@
+* { 
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: #201191;
+    color: white;
+}
+
+.gradientText {
+    @apply text-transparent bg-clip-text;
+    @apply bg-gradient-to-br from-primary via-blue-600 to-blue-400;
+}
+
+@media (prefers-color-scheme: dark) {
+    *::selection {
+        background-color: #197278;
+        color: white;
+    }
+}

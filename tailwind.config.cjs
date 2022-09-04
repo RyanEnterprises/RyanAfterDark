@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: ['Raleway', 'sans-serif'],
+      secondary: ['Poppins', 'sans-serif']
     },
     extend: {
       colors: {
