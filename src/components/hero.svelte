@@ -1,5 +1,7 @@
 <script>
     import logo from '/FullColorFavi.svg'
+    import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+    import arrow from '../../node_modules/bootstrap-icons/icons/arrow-right.svg'
 </script>
 <div class="grid">
     <div class="tile">
@@ -8,9 +10,11 @@
             Whats <br>
             Possible.
         </h1>
+        <a href="/" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
+        <alert class="alert alert-warning"><strong>WARN: </strong>It might blow your mind</alert>
     </div>
-    <div class="tile">
-        <img src={logo} alt="">
+    <div class="tile p-10">
+        <img src={logo} alt="" class="hover:animate-spin">
     </div>
 </div>
 
@@ -18,7 +22,7 @@
 <style>
 .grid {
     display:grid;
-    grid-template-columns:1fr 1fr
+    grid-template-columns: 1fr 1fr;
 }
 .tile {
     padding: 50px;
