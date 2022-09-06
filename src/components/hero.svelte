@@ -1,7 +1,7 @@
 <script>
     import logo from '/FullColorFavi.svg'
-    import '../../node_modules/bootstrap/dist/css/bootstrap.css'
     import arrow from '../../node_modules/bootstrap-icons/icons/arrow-right.svg'
+    import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 </script>
 <div class="grid">
     <div class="tile">

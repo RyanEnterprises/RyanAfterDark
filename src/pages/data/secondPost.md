@@ -1,9 +1,10 @@
 ---
-layout: "../layouts/blogPost.astro"
+layout: "../../layouts/blogPost.astro"
 title: "Second Post"
 description: "Posty Post Post"
 pubDate: "Sept 05 2022"
 heroImage: "../../img/FullColor.svg"
+urlBase: "secondPost"
 ---
 
 @hiteacheryouare
