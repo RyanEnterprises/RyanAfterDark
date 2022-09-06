@@ -10,8 +10,10 @@
             Whats <br>
             Possible.
         </h1>
-        <a href="/" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
-        <alert class="alert alert-warning"><strong>WARN: </strong>It might blow your mind</alert>
+        <div class="m-auto">
+            <a href="/blog" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
+            <alert class="alert alert-warning"><strong>WARN: </strong>It might blow your mind</alert>
+        </div>
     </div>
     <div class="tile p-10">
         <img src={logo} alt="" class="hover:animate-spin">

@@ -9,6 +9,7 @@ import white from '/white.png'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'RyanEnterprises', href: 'https://ryanenterprises.github.io/', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 function classNames(...classes) {

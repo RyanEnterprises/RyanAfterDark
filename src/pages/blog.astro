@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+const posts = (await Astro.glob('../data/*.{md,mdx}')).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
+---
+
+<Layout title="RyanAfterDark - Blog">
+    <section>
+        <ul class="grid">
+            {posts.map((post) => (
+                <li class="tile">
+                    <div class="rounded-lg shadow-md shadow-gray-300 p-4">
+                        <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
+                        <a class="font-bold font-secondary" href={post.url}>{post.frontmatter.title}</a> <br />
+                        <time datetime={post.frontmatter.pubDate}>
+                            {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric',
+                            })}
+                        </time>
+                        <p class="p-4">{post.frontmatter.description}</p>
+                    </div>
+                </li>
+            ))}
+        </ul>
+    </section>
+</Layout>
+
+<style>
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tile {
+    padding: 50px;
+    margin: 50px;
+    text-align:left;
+}
+img {
+    width: 350px;
+}
+</style>

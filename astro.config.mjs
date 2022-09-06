@@ -9,5 +9,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), robotsTxt(), sitemap(), svelte(), react()],
-  site: "https://ryanenterprises.github.io/RyanAfterDark"
+  site: "https://ryanenterprises.github.io/RyanAfterDark",
+  outDir: './docs',
 });
