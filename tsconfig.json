@@ -3,5 +3,8 @@
   "compilerOptions": {
     "target": "es5",
     "pretty": true
-  }
+  },
+  "exclude": [
+    "./docs"
+  ],
 }
