@@ -2,6 +2,7 @@
 layout: "../../layouts/blogPost.astro"
 title: "Triplets"
 description: "Triplets are born"
+author: "James Webb"
 pubDate: "Sept 01 2022"
 heroImage: "../../img/faviBlack.svg"
 urlBase: "triplet"

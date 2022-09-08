@@ -18,6 +18,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css'
                     <div class="rounded-lg shadow-md shadow-gray-300 p-4">
                         <img src={post.frontmatter.heroImage} alt="" class="m-auto p-4" />                     
                         <a href={`/data/${post.frontmatter.urlBase}`} class="font-bold font-secondary">{post.frontmatter.title}</a> <br />
+                        <p class="font-bold font-secondary">{post.frontmatter.author}</p>
                         <time datetime={post.frontmatter.pubDate}>
                             {new Date(post.frontmatter.pubDate).toLocaleDateString('en-us', {
                                 year: 'numeric',

@@ -5,6 +5,7 @@ export interface Props {
 	content: {
 		title: string;
 		description: string;
+		author: string | undefined;
 		pubDate: string;
 		updatedDate?: string;
 		heroImage: string;
@@ -12,7 +13,7 @@ export interface Props {
 	};
 }
 const {
-	content: { title, description, pubDate, updatedDate, heroImage, urlBase },
+	content: { title, description, author, pubDate, updatedDate, heroImage, urlBase },
 } = Astro.props;
 ---
 <Layout title={title} description={description}>
@@ -27,7 +28,8 @@ const {
 						class="m-auto"
 					/>
 				)}
-				<h1 class="font-bold font-primary text-3xl p-4">{title}</h1>
+				<h1 class="font-bold font-primary text-3xl p-4 underline underline-offset-1">{title}</h1>
+				<h1 class="font-semibold font-primary text-2xl pl-4">{author}</h1>
 				{pubDate && <time class="p-4">{pubDate}</time>}
 				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
 				<hr/>
