@@ -11,5 +11,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), robotsTxt(), sitemap(), svelte(), react()],
   site: 'https://ryanenterprises.github.io/RyanAfterDark',
-  outDir: './docs',
 });
