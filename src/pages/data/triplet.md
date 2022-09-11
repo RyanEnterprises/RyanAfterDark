@@ -1,11 +1,11 @@
 ---
-layout: "../../layouts/blogPost.astro"
-title: "Triplets"
-description: "Triplets are born"
-author: "James Webb"
-pubDate: "Sept 01 2022"
-heroImage: "../../img/faviBlack.svg"
-urlBase: "triplet"
+layout: "../../layouts/blogPost.astro" #dont touch
+title: "Triplets" #Required
+description: "Triplets are born" #Required
+author: "James Webb" #Required
+pubDate: "Sept 01 2022" #Required
+heroImage: "../../img/faviBlack.svg" # You need to have an image, but if you dont know how to resolve a path, I can for you
+urlBase: "triplet" # don't touch
 ---
 
 
