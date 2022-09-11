@@ -5,11 +5,9 @@
 </script>
 <div class="grid">
     <div class="tile">
-        <h1 class="p-10 font-primary font-extrabold gradientText sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-            Pushing <br>
-            Whats <br>
-            Possible.
-        </h1>
+        <slot>
+        
+        </slot>
         <div class="m-auto">
             <a href="/blog" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
             <alert class="alert alert-warning"><strong>WARN: </strong>It might blow your mind</alert>

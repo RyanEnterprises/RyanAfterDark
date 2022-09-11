@@ -10,4 +10,8 @@ urlBase: "actualFirstPost" # don't touch
 
 > We believe that when our website looks good and is engaging, people are more likely to see that brand in a positive light
 
-That is a quote from Ryan Mullin. CEO and President of Ryan Enterprises. 
+That is a quote from Ryan Mullin. CEO and President of Ryan Enterprises when questioned about why we continue to redesign the website over and over again.
+
+About 1 year ago, Ryan Enterprises began it's web development journey with RyanWeb. This was a very simple HTML and CSS website that had a total of about 100 words on it. However, we wanted to grow the website, without ruining what's currently working. So, RyanAfterDark was born. The official testing ground before any new technologies got depolyed to the main site. 
+
+Currently, this website is built with [Astro]("https://astro.build"), [Svelte]("https://svelte.dev"), and [React]("https://reactjs.org/")

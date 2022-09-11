@@ -2,7 +2,7 @@
 import chat from '../../node_modules/bootstrap-icons/icons/chat-right-dots.svg'
 import XMarkIcon from '../../node_modules/bootstrap-icons/icons/x-circle.svg'
 
-export default function Example() {
+export default (): JSX.Element =>  {
     return (
     <div className="bg-primary dark:bg-tertiary sticky top-0">
         <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">

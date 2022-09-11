@@ -1,4 +1,4 @@
-export default function Example() {
+export default () => {
     return (
       <div className="bg-gray-50 dark:bg-gray-800 dark:text-white">
         <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">

@@ -4,12 +4,15 @@ import Hero from '../components/hero.svelte'
 import Benefits from '../components/benefits.svelte'
 import CTA from '../components/cta'
 import Banner from '../components/banner'
+import Typewriter from '../components/typewriter'
 ---
 
 <Layout title="RyanAfterDark - Home">
 	<main class="dark:bg-black dark:text-white">
 		<Banner client:idle />
-		<Hero />
+		<Hero>
+			<Typewriter client:visible />
+		</Hero>
 		<Benefits />
 		<CTA />
 	</main>
