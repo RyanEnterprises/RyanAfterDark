@@ -17,7 +17,7 @@ export default () => {
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
-                href="/blog"
+                href="/RyanAfterDark/blog"
                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-primary-600 text-primary hover:text-white hover:bg-primary"
               >
                 Learn more

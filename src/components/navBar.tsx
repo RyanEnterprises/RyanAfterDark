@@ -7,9 +7,9 @@ import XMarkIcon from '../../node_modules/bootstrap-icons/icons/x-circle.svg'
 import white from '/white.png'
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
+  { name: 'Home', href: '/RyanAfterDark/', current: false },
   { name: 'RyanEnterprises', href: 'https://ryanenterprises.github.io/', current: false },
-  { name: 'Blog', href: '/blog', current: false },
+  { name: 'Blog', href: '/RyanAfterDark/blog', current: false },
 ]
 
 function classNames(...classes) {
@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default (): JSX.Element => {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-900 dark:bg-black">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

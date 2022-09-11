@@ -9,12 +9,12 @@
         
         </slot>
         <div class="m-auto">
-            <a href="/blog" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
-            <alert class="alert alert-warning"><strong>WARN: </strong>It might blow your mind</alert>
+            <a href="/RyanAfterDark/blog" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
+            <alert class="alert alert-warning portrait:hidden"><strong>WARN: </strong>It might blow your mind</alert>
         </div>
-    </div>
-    <div class="tile p-10">
-        <img src={logo} alt="" class="hover:animate-spin">
+    </div> 
+    <div class="tile p-10 portrait:hidden">
+        <img src={logo} alt="" class="hover:animate-spin motion-safe:hover:animate-none">
     </div>
 </div>
 

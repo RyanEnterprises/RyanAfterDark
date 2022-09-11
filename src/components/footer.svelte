@@ -12,7 +12,7 @@
             <p class="text-white p-4">Copyright &copy; {year.getFullYear()}, Ryan Enterprises. All Rights Reserved</p>
         </div>
         <div class="flex justify-between flex-col p-4 text-white underline">
-            <a href="/">Home</a><a href="/blog">Blog</a><a href="https://ryanenterprises.github.io/">Ryan Enterprises</a>
+            <a href="/RyanAfterDark/">Home</a><a href="/RyanAfterDark/blog">Blog</a><a href="https://ryanenterprises.github.io/">Ryan Enterprises</a>
         </div>
     </div>
 </footer>
