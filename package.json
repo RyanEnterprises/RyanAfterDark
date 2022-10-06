@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
-    "astro": "^1.4.1",
+    "astro": "^1.4.5",
     "astro-seo": "^0.6.0",
     "bootstrap": "^5.2.1",
     "bootstrap-icons": "^1.9.1",
