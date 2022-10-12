@@ -14,7 +14,7 @@
     "@headlessui/react": "^1.7.3",
     "astro": "^1.4.7",
     "astro-seo": "^0.6.0",
-    "bootstrap": "^5.2.1",
+    "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "demotivator": "^10.0.1",
     "headlessui": "^0.0.0",
