@@ -2,9 +2,9 @@
 import chat from '../../node_modules/bootstrap-icons/icons/chat-right-dots.svg'
 import XMarkIcon from '../../node_modules/bootstrap-icons/icons/x-circle.svg'
 
-export default (): JSX.Element =>  {
+export default () =>  {
     return (
-    <div className="bg-primary dark:bg-tertiary sticky top-0">
+    <div className="bg-primary dark:bg-tertiary ">
         <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
             <div className="flex w-0 flex-1 items-center">

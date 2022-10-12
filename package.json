@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vue": "^1.1.0",
     "@headlessui/react": "^1.7.3",
     "astro": "^1.4.1",
     "astro-seo": "^0.6.0",
@@ -18,7 +19,8 @@
     "demotivator": "^10.0.1",
     "headlessui": "^0.0.0",
     "typeit-react": "^2.6.0",
-    "uadetect": "^4.0.0"
+    "uadetect": "^4.0.0",
+    "vue": "^3.2.40"
   },
   "devDependencies": {
     "@astrojs/react": "^1.1.4",

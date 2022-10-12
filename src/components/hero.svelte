@@ -1,35 +1,24 @@
 <script>
     import logo from '/FullColorFavi.svg'
-    import arrow from '../../node_modules/bootstrap-icons/icons/arrow-right.svg'
-    import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+    import arrow from 'bootstrap-icons/icons/arrow-right.svg'
+    import 'bootstrap/dist/css/bootstrap.css'
 </script>
-<div class="grid">
-    <div class="tile">
+<div class="grid grid-cols-2 portrait:flex portrait:content-center portrait:justify-center p-10">
+    <div class="">
         <slot>
         
         </slot>
         <div class="m-auto">
             <a href="/RyanAfterDark/blog" class="btn btn-primary flex content-center justify-between"> Learn More <img src={arrow} alt=""> </a>
-            <alert class="alert alert-warning portrait:hidden"><strong>WARN: </strong>It might blow your mind</alert>
         </div>
     </div> 
-    <div class="tile p-10 portrait:hidden">
+    <div class="p-10 portrait:hidden">
         <img src={logo} alt="" class="hover:animate-spin motion-safe:hover:animate-none">
     </div>
 </div>
 
 
 <style>
-.grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
-.tile {
-    padding: 50px;
-    margin: 50px;
-    border-radius:30px;
-    text-align:left;
-}
 img {
     width: 35%;
 }

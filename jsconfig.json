@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@components/*":[
+                "src/components/*"
+            ],
+            "@bootstrap":[
+                "node_modules/bootstrap/dist/css/bootstrap.css"
+            ],
+            "@bs-icons/*":[
+                "node_modules/bootstrap-icons/icons/*"
+            ],
+            "@images/*":[
+                "img/*"
+            ]
+        }
+    }
+}

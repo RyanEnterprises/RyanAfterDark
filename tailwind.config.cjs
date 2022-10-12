@@ -11,6 +11,8 @@ module.exports = {
 			'primary': '#201191',
 			'secondary': '#FF9F00',
 			'tertiary': '#197278',
+			'solGradientRed': "#FF1F01",
+			'solGradientYellow': "#FFC700",
 		  },
 		}
 	  },
