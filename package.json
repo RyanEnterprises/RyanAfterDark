@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/vue": "^1.1.0",
     "@headlessui/react": "^1.7.3",
-    "astro": "^1.4.7",
+    "astro": "^1.6.2",
     "astro-seo": "^0.6.0",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
