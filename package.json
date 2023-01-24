@@ -23,7 +23,7 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@astrojs/react": "^1.2.0",
+    "@astrojs/react": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/svelte": "^1.0.1",
     "@astrojs/tailwind": "^2.1.2",
